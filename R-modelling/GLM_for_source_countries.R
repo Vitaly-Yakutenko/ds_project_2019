@@ -75,3 +75,5 @@ i = 3
 plot(dataset_uom[dataset_uom$source_country== source[i],]$year, dataset_uom[dataset_uom$source_country==source[i],]$UOM_count,
      xlab = 'Year', ylab = 'UOM Student Count', main = paste('Number of Student from', source[i], 'to', 'UOM'))
 lines(dataset_uom[dataset_uom$source_country==source[i],]$year, uom_model$fitted.values[(1+(i-1)*11):(11+(i-1)*11)],type='o', col='red')
+
+#---------------------------------------------------------------------------------------------------------
